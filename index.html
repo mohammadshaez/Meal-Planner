@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container-main">
+      <!-- Navbar -->
+
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li>
+              <img
+                src="https://img.freepik.com/premium-vector/healthy-food-logo_476121-95.jpg?w=2000"
+                alt="logo"
+                height="60"
+                width="60"
+              />
+            </li>
+            <li>Meal Planner</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="display"></div>
+      <div class="container-inner">
+        <!-- Forms -->
+
+        <form action="#" id="form">
+          <div class="form-row">
+            <div class="col-33">
+              <input
+                type="number"
+                name="height"
+                id="height"
+                placeholder="Enter Height (cm)"
+                required
+              />
+            </div>
+            <div class="col-33">
+              <input
+                type="number"
+                name="weight"
+                id="weight"
+                placeholder="Enter Weight"
+                required
+              />
+            </div>
+            <div class="col-33">
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Enter Age"
+                required
+              />
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <div class="col-50">
+              <select name="gender" id="gender" required>
+                <option value="" selected disabled>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="col-50">
+              <select name="activity" id="activity">
+                <option value="" selected disabled>Physical Activity</option>
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <input type="submit" id="submit" value="Generate Meals" />
+          </div>
+        </form>
+
+        <!-- Cards -->
+
+        <div class="cards"></div>
+
+        <!-- Recipe Card -->
+
+        <div class="recipe-table">
+          <table>
+            <thead>
+              <tr>
+                <th>title</th>
+                <th>Ingredients</th>
+                <th>Steps</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
