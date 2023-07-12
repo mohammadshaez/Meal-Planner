@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 25%;
+    border: 5px solid #C7E8CA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Nav bar */
+
+nav {
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    align-items: center;
+}
+
+nav ul li {
+    color: white;
+    font-family:;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.navbar {
+    box-shadow: 0 5px 5px 0 grey;
+}
+.navbar img {
+    display: block; 
+}
+
+.container-inner {
+    margin: 70px 10%;
+}
+
+/* Forms */
+
+.form-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input {
+    width: 130px;
+    height: 40px;
+    background-color: #DDF7E3;
+    border: none;
+    border-radius: 8px;
+}
+input[type="submit"] {
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+select {
+    width: 130px;
+    height: 40px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card {
+    width: 10rem;
+    /* border: 1px solid black; */
+    
+}
+.card-upper {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.card-img img{
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.card-below {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    line-height: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-below button {
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+/* Recipe Card */
+
+.recipe-table {
+    background-color: #C7E8CA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 70px;
+}
+table {
+    width: 100%;
+}
+th {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+th, td {
+    padding: 10px;
+}
+
+@media screen and (500px <= width <= 1000px) {
+    input {
+        /* width: 100%; */
+        /* display: block; */
+        /* background-color: #DF2E38; */
+    }
+    .form-row {
+        flex-flow: column;
+        align-items: center;
+    }
+    .cards {
+        display: block;
+    }
+    
+    .card {
+        margin: auto;
+    }
+    body {
+        margin: 0;
+    }
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+}
+
+:root {
+    --color-primary : #DF2E38;
+}
